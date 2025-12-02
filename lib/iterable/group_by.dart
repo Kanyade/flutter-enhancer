@@ -2,7 +2,7 @@ extension Group<T> on Iterable<T> {
   /// Groups the elements of the iterable by a specified [key] function.
   /// The result is a map where each key corresponds to a list of elements
   /// that share the same key.
-  /// 
+  ///
   /// Example usage:
   /// ```dart
   /// class Person {

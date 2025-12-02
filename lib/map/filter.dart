@@ -1,7 +1,7 @@
 extension Filter<K, V> on Map<K, V> {
   /// Filters the map entries based on the provided predicate function [f].
   /// The function returns an iterable of map entries that satisfy the condition defined in [f].
-  /// 
+  ///
   /// Example usage:
   /// ```dart
   /// void main() {

@@ -1,7 +1,7 @@
 extension FlatMap<T> on T? {
   /// Transforms the object using the provided function if it is not null,
   /// otherwise returns null.
-  /// 
+  ///
   /// Example usage:
   /// ```dart
   /// void main() {

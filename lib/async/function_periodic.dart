@@ -2,9 +2,9 @@ import 'dart:async';
 
 extension Periodic<T> on T? Function() {
   /// Creates a periodic timer that calls the function every [duration].
-  /// 
+  ///
   /// The returned [Timer] can be used to cancel the periodic calls.
-  /// 
+  ///
   /// Example usage:
   /// ```dart
   /// void main() {

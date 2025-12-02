@@ -2,7 +2,7 @@ extension WhenAll<T> on List<T?> {
   /// Executes the [callback] with the list of elements
   /// if all elements in the list are non-null. If any element is null,
   /// the method returns null.
-  /// 
+  ///
   /// Example usage:
   /// ```dart
   /// void main() {

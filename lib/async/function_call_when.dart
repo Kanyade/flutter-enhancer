@@ -1,8 +1,8 @@
 extension CallWhen<T> on T? Function() {
   /// Calls the function and returns its result only if the [predicate] is true.
-  /// 
+  ///
   /// If the [predicate] is false, the function is not called and `null` is returned.
-  /// 
+  ///
   /// Example usage:
   /// ```dart
   /// String? getValue() => "Hello, world!";

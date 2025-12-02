@@ -121,9 +121,10 @@ void main() {
         onDone: () {},
       );
 
-      controller..add(0)
-      ..add(1)
-      ..add(2);
+      controller
+        ..add(0)
+        ..add(1)
+        ..add(2);
       await controller.close();
 
       await Future.delayed(const Duration(milliseconds: 50));

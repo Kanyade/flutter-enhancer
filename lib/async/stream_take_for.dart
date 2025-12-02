@@ -2,7 +2,7 @@ extension TakeFor<T> on Stream<T> {
   /// Takes events from the stream for the specified [duration].
   /// The returned stream will emit events from the original stream
   /// until the specified duration has elapsed since the subscription started.
-  /// 
+  ///
   /// Example usage:
   /// ```dart
   /// void main() {

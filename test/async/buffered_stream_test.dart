@@ -65,10 +65,11 @@ void main() {
         onError: (error) => receivedErrors.add(error),
       );
 
-      controller..add(1)
-      ..add(2)
-      ..addError('Test error')
-      ..add(3);
+      controller
+        ..add(1)
+        ..add(2)
+        ..addError('Test error')
+        ..add(3);
 
       await Future.delayed(const Duration(milliseconds: 100));
 

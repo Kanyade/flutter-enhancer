@@ -15,7 +15,7 @@ extension DuplicatesList<T> on List<T> {
 
   /// Returns the number of duplicate elements in the iterable.
   /// Note that this does not count the unique elements that are duplicated, but the total number of duplicates.
-  /// 
+  ///
   /// Example usage:
   /// ```dart
   /// void main() {
@@ -51,7 +51,7 @@ extension DuplicatesList<T> on List<T> {
   ];
 
   /// Removes duplicate elements from the list in place.
-  /// 
+  ///
   /// Example usage:
   /// ```dart
   /// void main() {
@@ -64,7 +64,7 @@ extension DuplicatesList<T> on List<T> {
 
   /// Returns a new list containing only the duplicate elements from this list.
   /// Note that if an element is duplicated multiple times, it will appear multiple times in the result.
-  /// 
+  ///
   /// Example usage:
   /// ```dart
   /// void main() {

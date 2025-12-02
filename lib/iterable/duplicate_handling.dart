@@ -1,7 +1,7 @@
 extension Duplicates<T> on Iterable<T> {
   /// Returns a new iterable with [values] appended to the end of this iterable,
   /// avoiding duplicates.
-  /// 
+  ///
   /// Example usage:
   /// ```dart
   /// void main() {
@@ -24,7 +24,7 @@ extension Duplicates<T> on Iterable<T> {
   }
 
   /// Returns the number of duplicate elements in the iterable.
-  /// 
+  ///
   /// Example usage:
   /// ```dart
   /// void main() {
@@ -36,7 +36,7 @@ extension Duplicates<T> on Iterable<T> {
   int get numberOfDuplicates => length - {...this}.length;
 
   /// Returns true if the iterable contains any duplicate elements.
-  /// 
+  ///
   /// Example usage:
   /// ```dart
   /// void main() {
@@ -48,7 +48,7 @@ extension Duplicates<T> on Iterable<T> {
   bool get containsDuplicates => numberOfDuplicates > 0;
 
   /// Returns a new iterable containing only the unique elements from this iterable.
-  /// 
+  ///
   /// Example usage:
   /// ```dart
   /// void main() {
@@ -62,7 +62,7 @@ extension Duplicates<T> on Iterable<T> {
   ];
 
   /// Returns a new iterable containing only the duplicate elements from this iterable.
-  /// 
+  ///
   /// Example usage:
   /// ```dart
   /// void main() {

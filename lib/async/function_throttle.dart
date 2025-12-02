@@ -8,7 +8,7 @@ extension Throttle<T> on T? Function() {
   /// If the function is called again within the duration, it will be ignored.
   /// [tag] can be used to differentiate between different throttled functions.
   /// If no [tag] is provided, the hash code of the function will be used.
-  /// 
+  ///
   /// Example usage:
   /// ```dart
   /// void main() {

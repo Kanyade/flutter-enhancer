@@ -1,7 +1,7 @@
 extension CompactMap<T> on List<T> {
   /// Maps each element of the list using the provided function [f] and
   /// returns a new list containing only the non-null results.
-  /// 
+  ///
   /// Example usage:
   /// ```dart
   /// void main() {

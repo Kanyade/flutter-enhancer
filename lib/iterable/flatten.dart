@@ -2,7 +2,7 @@
 
 extension Flatten<T extends Object?> on Iterable<T> {
   /// Flattens a nested iterable structure into a single iterable.
-  /// 
+  ///
   /// Example usage:
   /// ```dart
   /// void main() {

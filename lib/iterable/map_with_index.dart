@@ -1,7 +1,7 @@
 extension IterationWithIndex<T> on Iterable<T> {
   /// Maps each element of the iterable along with its index using the provided
   /// function [f].
-  /// 
+  ///
   /// Example usage:
   /// ```dart
   /// void main() {

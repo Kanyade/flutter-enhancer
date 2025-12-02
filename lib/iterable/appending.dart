@@ -1,6 +1,6 @@
 extension InlineAdd<T> on Iterable<T> {
   /// Returns a new iterable with [other] appended to the end of this iterable.
-  /// 
+  ///
   /// Example usage:
   /// ```dart
   /// final Iterable<int> numbers = [1, 2, 3];

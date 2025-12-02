@@ -1,6 +1,6 @@
 extension WithDelay<T> on T {
   /// Converts the object to a Future that completes with the object after an optional delay.
-  /// 
+  ///
   /// Example usage:
   /// ```dart
   /// void main() async {

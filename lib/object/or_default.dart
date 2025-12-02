@@ -7,17 +7,17 @@ extension OrDefault<T> on T? {
   /// - Map: {}
   /// - List: []
   /// - Set: {}
-  /// 
+  ///
   /// For unsupported types, it will throw.
-  /// 
+  ///
   /// Example usage:
   /// ```dart
   /// int? a;
   /// print(a.orDefault); // prints 0
-  /// 
+  ///
   /// String? b;
   /// print(b.orDefault); // prints ''
-  /// 
+  ///
   /// List? c;
   /// print(c.orDefault); // prints []
   /// ```

@@ -125,8 +125,9 @@ void main() {
         count = count! + 1;
       }
 
-      incrementCount..throttle(duration: const Duration(milliseconds: 50))
-      ..throttle(duration: const Duration(milliseconds: 50));
+      incrementCount
+        ..throttle(duration: const Duration(milliseconds: 50))
+        ..throttle(duration: const Duration(milliseconds: 50));
 
       expect(count, 1);
 

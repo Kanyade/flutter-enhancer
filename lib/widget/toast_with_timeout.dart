@@ -6,7 +6,7 @@ extension ToastyWidget on Widget {
   ///
   /// The toast will be shown as a modal dialog with an optional barrier color.
   /// The dialog will automatically dismiss after the specified duration.
-  /// 
+  ///
   /// Example usage:
   /// ```dart
   /// MyToastWidget().asToast(

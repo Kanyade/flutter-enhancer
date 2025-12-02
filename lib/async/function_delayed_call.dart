@@ -1,7 +1,7 @@
 extension DelayedCall<T> on T Function() {
   /// Calls the function after a specified [duration] and returns a [Future]
   /// that completes with the function's return value.
-  /// 
+  ///
   /// Example usage:
   /// ```dart
   ///int getNumbers() => 5;

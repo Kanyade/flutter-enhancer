@@ -2,7 +2,7 @@ extension MergeList<T> on List<T> {
   /// Merges this list with [items] and returns a new list.
   /// If [unique] is true, elements already present will not be added again from
   /// [items]. Note that if the original list has duplicates, they will be preserved.
-  /// 
+  ///
   /// Example usage:
   /// ```dart
   /// void main() {

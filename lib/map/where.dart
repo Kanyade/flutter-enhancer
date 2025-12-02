@@ -2,7 +2,7 @@ extension DetailedWhere<K, V> on Map<K, V> {
   /// Filters the map by its keys and values using the provided predicate function.
   /// The function `f` takes a key and a value as parameters and returns a boolean indicating
   /// whether the key-value pair should be included in the resulting map.
-  /// 
+  ///
   /// Example usage:
   /// ```dart
   /// void main() {
@@ -24,7 +24,7 @@ extension DetailedWhere<K, V> on Map<K, V> {
   /// Filters the map by its keys using the provided predicate function.
   /// The function `f` takes a key as a parameter and returns a boolean indicating
   /// whether the key should be included in the resulting map.
-  /// 
+  ///
   /// Example usage:
   /// ```dart
   /// void main() {
@@ -44,7 +44,7 @@ extension DetailedWhere<K, V> on Map<K, V> {
   /// Filters the map by its values using the provided predicate function.
   /// The function `f` takes a value as a parameter and returns a boolean indicating
   /// whether the value should be included in the resulting map.
-  /// 
+  ///
   /// Example usage:
   /// ```dart
   /// void main() {

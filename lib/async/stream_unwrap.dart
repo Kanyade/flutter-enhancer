@@ -1,6 +1,6 @@
 extension UnwrapStream<T> on Stream<T?> {
   /// Unwraps nullable events from the stream, emitting only non-null values.
-  /// 
+  ///
   /// This is useful when you have a stream of nullable values and want to
   /// filter out the nulls, only receiving the non-null values.
   ///

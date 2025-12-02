@@ -1,6 +1,6 @@
 extension AddOperator<K, V> on Map<K, V> {
   /// Adds all key-value pairs from [other] to the current map and returns a new map.
-  /// 
+  ///
   /// Example usage:
   /// ```dart
   /// void main() {

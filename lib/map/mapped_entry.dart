@@ -18,7 +18,7 @@ extension DetailedMap<K, V> on Map<K, V> {
   Map<R, V> mappedKeys<R>(R Function(K key) f) => map((key, value) => MapEntry(f(key), value));
 
   /// Maps the values of the map using the provided function [f].
-  /// 
+  ///
   /// Example usage:
   /// ```dart
   /// void main() {
