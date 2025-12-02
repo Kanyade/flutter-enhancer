@@ -1,0 +1,20 @@
+name: flutter_enhancer
+description: "A huge set of Flutter utilities and extensions to make your development easier."
+version: 0.1.0
+homepage: https://github.com/Kanyade/flutter-enhancer
+repository: https://github.com/Kanyade/flutter-enhancer
+
+environment:
+  sdk: ^3.8.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  collection: ^1.19.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
