@@ -252,5 +252,62 @@ void main() {
         expect(saturday.isSameWeek(sunday, startsWithMonday: false), false);
       });
     });
+
+    group('isTodayOrAfter', () {
+      test('isTodayOrAfter returns true for today', () {
+        final date = DateTime.now();
+        expect(date.isTodayOrAfter, true);
+      });
+
+      test('isTodayOrAfter returns true for future date', () {
+        final date = DateTime.now().add(const Duration(days: 1));
+        expect(date.isTodayOrAfter, true);
+      });
+
+      test('isTodayOrAfter returns false for past date', () {
+        final date = DateTime.now().subtract(const Duration(days: 1));
+        expect(date.isTodayOrAfter, false);
+      });
+    });
+
+    group('isSameDayOrAfter', () {
+      test('isSameDayOrAfter returns true for same day', () {
+        final date1 = DateTime(2020, 1, 1, 10);
+        final date2 = DateTime(2020, 1, 1, 14);
+        expect(date1.isSameDayOrAfter(date2), true);
+      });
+
+      test('isSameDayOrAfter returns true for after day', () {
+        final date1 = DateTime(2020, 1, 2);
+        final date2 = DateTime(2020);
+        expect(date1.isSameDayOrAfter(date2), true);
+      });
+
+      test('isSameDayOrAfter returns false for before day', () {
+        final date1 = DateTime(2020);
+        final date2 = DateTime(2020, 1, 2);
+        expect(date1.isSameDayOrAfter(date2), false);
+      });
+    });
+
+    group('isSameDayOrBefore', () {
+      test('isSameDayOrBefore returns true for same day', () {
+        final date1 = DateTime(2020, 1, 1, 10);
+        final date2 = DateTime(2020, 1, 1, 14);
+        expect(date1.isSameDayOrBefore(date2), true);
+      });
+
+      test('isSameDayOrBefore returns true for before day', () {
+        final date1 = DateTime(2020);
+        final date2 = DateTime(2020, 1, 2);
+        expect(date1.isSameDayOrBefore(date2), true);
+      });
+
+      test('isSameDayOrBefore returns false for after day', () {
+        final date1 = DateTime(2020, 1, 2);
+        final date2 = DateTime(2020);
+        expect(date1.isSameDayOrBefore(date2), false);
+      });
+    });
   });
 }

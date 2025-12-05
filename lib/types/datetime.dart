@@ -25,6 +25,20 @@ extension DateExtension on DateTime {
         (year == nowDate.year && month == nowDate.month && day <= nowDate.day);
   }
 
+  /// Checks if the date is today or after.
+  ///
+  /// Example usage:
+  /// ```dart
+  /// final date = DateTime.now();
+  /// print(date.isTodayOrAfter); // true
+  /// ```
+  bool get isTodayOrAfter {
+    final nowDate = DateTime.now();
+    return year > nowDate.year ||
+        (year == nowDate.year && month > nowDate.month) ||
+        (year == nowDate.year && month == nowDate.month && day >= nowDate.day);
+  }
+
   /// Checks if the date is yesterday.
   ///
   /// Example usage:
@@ -178,6 +192,26 @@ extension DateExtension on DateTime {
   /// print(date1.isSameDay(date2)); // true
   /// ```
   bool isSameDay(DateTime b) => year == b.year && month == b.month && day == b.day;
+
+  /// Checks if [other] is the same day as [this] or in the future.
+  ///
+  /// Example usage:
+  /// ```dart
+  /// final date1 = DateTime(2020, 1, 1);
+  /// final date2 = DateTime(2020, 1, 1, 12, 0, 0);
+  /// print(date1.isSameDayOrAfter(date2)); // true
+  /// ```
+  bool isSameDayOrAfter(DateTime other) => isAfter(other) || isSameDay(other);
+
+  /// Checks if [other] is the same day as [this] or in the past.
+  ///
+  /// Example usage:
+  /// ```dart
+  /// final date1 = DateTime(2020, 1, 1);
+  /// final date2 = DateTime(2020, 1, 1, 12, 0, 0);
+  /// print(date1.isSameDayOrBefore(date2)); // true
+  /// ```
+  bool isSameDayOrBefore(DateTime other) => isBefore(other) || isSameDay(other);
 
   /// Checks if the date is the first day of the month.
   ///

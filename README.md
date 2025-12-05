@@ -33,60 +33,63 @@ Since it would still be an essay to write a concise usage guide for all 141 exte
 
 ### Base Types
 
-| Extension on | Method/Property     | Returns         | Description                                        |
-| ------------ | ------------------- | --------------- | -------------------------------------------------- |
-| **Color**    | `avg()`             | `Color`         | Get average color between two colors               |
-| **Color**    | `darken()`          | `Color`         | Darken a color by percentage                       |
-| **Color**    | `lighten()`         | `Color`         | Lighten a color by percentage                      |
-| **DateTime** | `addDays()`         | `DateTime`      | Add days to a date                                 |
-| **DateTime** | `addHours()`        | `DateTime`      | Add hours to a date                                |
-| **DateTime** | `addMonths()`       | `DateTime`      | Add months to a date                               |
-| **DateTime** | `addYears()`        | `DateTime`      | Add years to a date                                |
-| **DateTime** | `firstDayOfMonth`   | `DateTime`      | Get first day of the month                         |
-| **DateTime** | `isFirstDayOfMonth` | `bool`          | Check if date is first day of month                |
-| **DateTime** | `isLastDayOfMonth`  | `bool`          | Check if date is last day of month                 |
-| **DateTime** | `isSameDay()`       | `bool`          | Check if two dates are the same day                |
-| **DateTime** | `isSameMonth()`     | `bool`          | Check if two dates are in the same month           |
-| **DateTime** | `isSameWeek()`      | `bool`          | Check if two dates are in the same week            |
-| **DateTime** | `isToday`           | `bool`          | Check if date is today                             |
-| **DateTime** | `isTodayOrBefore`   | `bool`          | Check if date is today or before                   |
-| **DateTime** | `isTomorrow`        | `bool`          | Check if date is tomorrow                          |
-| **DateTime** | `isYesterday`       | `bool`          | Check if date is yesterday                         |
-| **DateTime** | `lastDayOfMonth`    | `DateTime`      | Get last day of the month                          |
-| **DateTime** | `nextDay`           | `DateTime`      | Get next day                                       |
-| **DateTime** | `nextHour`          | `DateTime`      | Get next hour                                      |
-| **DateTime** | `nextMonth`         | `DateTime`      | Get next month                                     |
-| **DateTime** | `nextWeek`          | `DateTime`      | Get next week                                      |
-| **DateTime** | `nextYear`          | `DateTime`      | Get next year                                      |
-| **DateTime** | `previousDay`       | `DateTime`      | Get previous day                                   |
-| **DateTime** | `previousHour`      | `DateTime`      | Get previous hour                                  |
-| **DateTime** | `previousMonth`     | `DateTime`      | Get previous month                                 |
-| **DateTime** | `previousWeek`      | `DateTime`      | Get previous week                                  |
-| **DateTime** | `previousYear`      | `DateTime`      | Get previous year                                  |
-| **int**      | `days`              | `Duration`      | Convert integer to Duration in days                |
-| **int**      | `hours`             | `Duration`      | Convert integer to Duration in hours               |
-| **int**      | `millis`            | `Duration`      | Convert integer to Duration in milliseconds        |
-| **int**      | `minutes`           | `Duration`      | Convert integer to Duration in minutes             |
-| **int**      | `rangeTo()`         | `Iterable<int>` | Generate iterable range between two integers       |
-| **int**      | `seconds`           | `Duration`      | Convert integer to Duration in seconds             |
-| **num**      | `isDouble`          | `bool`          | Check if number is a double                        |
-| **num**      | `isInteger`         | `bool`          | Check if number is an integer                      |
-| **num**      | `isNegative`        | `bool`          | Check if number is negative                        |
-| **num**      | `isNegativeOrZero`  | `bool`          | Check if number is negative or zero                |
-| **num**      | `isPositive`        | `bool`          | Check if number is positive                        |
-| **num**      | `isPositiveOrZero`  | `bool`          | Check if number is positive or zero                |
-| **num**      | `isZero`            | `bool`          | Check if number is zero                            |
-| **String**   | `hardcoded`         | `String`        | Mark string as hardcoded for localization tracking |
-| **String?**  | `capitalized`       | `String`        | Capitalize first letter, lowercase rest            |
-| **String?**  | `getReadTime()`     | `int`           | Estimate read time in minutes                      |
-| **String?**  | `hasMatch()`        | `bool`          | Check if string matches regex pattern              |
-| **String?**  | `isAlphabetOnly()`  | `bool`          | Check if string contains only letters              |
-| **String?**  | `isBlank`           | `bool`          | Check if string is null, empty, or whitespace      |
-| **String?**  | `isBool()`          | `bool`          | Check if string is 'true' or 'false'               |
-| **String?**  | `isNumericOnly()`   | `bool`          | Check if string contains only numbers              |
-| **String?**  | `onlyLatin`         | `String`        | Remove non-Latin characters                        |
-| **String?**  | `reversed`          | `String?`       | Reverse the string                                 |
-| **String?**  | `wordCount`         | `int`           | Count words in string                              |
+| Extension on | Method/Property       | Returns         | Description                                            |
+| ------------ | --------------------- | --------------- | ------------------------------------------------------ |
+| **Color**    | `avg()`               | `Color`         | Get average color between two colors                   |
+| **Color**    | `darken()`            | `Color`         | Darken a color by percentage                           |
+| **Color**    | `lighten()`           | `Color`         | Lighten a color by percentage                          |
+| **DateTime** | `addDays()`           | `DateTime`      | Add days to a date                                     |
+| **DateTime** | `addHours()`          | `DateTime`      | Add hours to a date                                    |
+| **DateTime** | `addMonths()`         | `DateTime`      | Add months to a date                                   |
+| **DateTime** | `addYears()`          | `DateTime`      | Add years to a date                                    |
+| **DateTime** | `firstDayOfMonth`     | `DateTime`      | Get first day of the month                             |
+| **DateTime** | `isFirstDayOfMonth`   | `bool`          | Check if date is first day of month                    |
+| **DateTime** | `isLastDayOfMonth`    | `bool`          | Check if date is last day of month                     |
+| **DateTime** | `isSameDay()`         | `bool`          | Check if two dates are the same day                    |
+| **DateTime** | `isSameDayOrAfter()`  | `bool`          | Check if the other date is the same day or after this  |
+| **DateTime** | `isSameDayOrBefore()` | `bool`          | Check if the other date is the same day or before this |
+| **DateTime** | `isSameMonth()`       | `bool`          | Check if two dates are in the same month               |
+| **DateTime** | `isSameWeek()`        | `bool`          | Check if two dates are in the same week                |
+| **DateTime** | `isToday`             | `bool`          | Check if date is today                                 |
+| **DateTime** | `isTodayOrBefore`     | `bool`          | Check if date is today or before                       |
+| **DateTime** | `isTodayOrAfter`      | `bool`          | Check if date is today or after                        |
+| **DateTime** | `isTomorrow`          | `bool`          | Check if date is tomorrow                              |
+| **DateTime** | `isYesterday`         | `bool`          | Check if date is yesterday                             |
+| **DateTime** | `lastDayOfMonth`      | `DateTime`      | Get last day of the month                              |
+| **DateTime** | `nextDay`             | `DateTime`      | Get next day                                           |
+| **DateTime** | `nextHour`            | `DateTime`      | Get next hour                                          |
+| **DateTime** | `nextMonth`           | `DateTime`      | Get next month                                         |
+| **DateTime** | `nextWeek`            | `DateTime`      | Get next week                                          |
+| **DateTime** | `nextYear`            | `DateTime`      | Get next year                                          |
+| **DateTime** | `previousDay`         | `DateTime`      | Get previous day                                       |
+| **DateTime** | `previousHour`        | `DateTime`      | Get previous hour                                      |
+| **DateTime** | `previousMonth`       | `DateTime`      | Get previous month                                     |
+| **DateTime** | `previousWeek`        | `DateTime`      | Get previous week                                      |
+| **DateTime** | `previousYear`        | `DateTime`      | Get previous year                                      |
+| **int**      | `days`                | `Duration`      | Convert integer to Duration in days                    |
+| **int**      | `hours`               | `Duration`      | Convert integer to Duration in hours                   |
+| **int**      | `millis`              | `Duration`      | Convert integer to Duration in milliseconds            |
+| **int**      | `minutes`             | `Duration`      | Convert integer to Duration in minutes                 |
+| **int**      | `rangeTo()`           | `Iterable<int>` | Generate iterable range between two integers           |
+| **int**      | `seconds`             | `Duration`      | Convert integer to Duration in seconds                 |
+| **num**      | `isDouble`            | `bool`          | Check if number is a double                            |
+| **num**      | `isInteger`           | `bool`          | Check if number is an integer                          |
+| **num**      | `isNegative`          | `bool`          | Check if number is negative                            |
+| **num**      | `isNegativeOrZero`    | `bool`          | Check if number is negative or zero                    |
+| **num**      | `isPositive`          | `bool`          | Check if number is positive                            |
+| **num**      | `isPositiveOrZero`    | `bool`          | Check if number is positive or zero                    |
+| **num**      | `isZero`              | `bool`          | Check if number is zero                                |
+| **String**   | `hardcoded`           | `String`        | Mark string as hardcoded for localization tracking     |
+| **String?**  | `capitalized`         | `String`        | Capitalize first letter, lowercase rest                |
+| **String?**  | `getReadTime()`       | `int`           | Estimate read time in minutes                          |
+| **String?**  | `hasMatch()`          | `bool`          | Check if string matches regex pattern                  |
+| **String?**  | `isAlphabetOnly()`    | `bool`          | Check if string contains only letters                  |
+| **String?**  | `isBlank`             | `bool`          | Check if string is null, empty, or whitespace          |
+| **String?**  | `isBool()`            | `bool`          | Check if string is 'true' or 'false'                   |
+| **String?**  | `isNumericOnly()`     | `bool`          | Check if string contains only numbers                  |
+| **String?**  | `onlyLatin`           | `String`        | Remove non-Latin characters                            |
+| **String?**  | `reversed`            | `String?`       | Reverse the string                                     |
+| **String?**  | `wordCount`           | `int`           | Count words in string                                  |
 
 ### Iterables
 
